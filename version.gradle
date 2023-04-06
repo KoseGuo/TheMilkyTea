@@ -1,0 +1,27 @@
+ext {
+    // 组件配置
+    isApplication = false
+    appCompileSdk = 31
+    appMinSdk = 21
+    appTargetSdk = 31
+    appVersionCode = 100
+    appVersionName = '1.0.0'
+
+    // 依赖版本号
+    kotlinVersion = '1.5.2'
+    retrofitVersion = '2.9.0'
+
+    // 通用模块依赖
+    generalModules = [
+            ':common',
+            ':network',
+            ':router',
+            ':annotation'
+    ]
+
+    // 业务模块依赖
+    operationsModules = [
+            ':usercenter',
+            ':frontpage'
+    ]
+}

@@ -1,16 +1,19 @@
 plugins {
     id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
 }
+apply from:'../version.gradle'
 
 android {
-    compileSdk 31
+    compileSdk appCompileSdk
 
     defaultConfig {
         applicationId "com.kose.milkytea"
-        minSdk 21
-        targetSdk 31
-        versionCode 1
-        versionName "1.0"
+        minSdk appMinSdk
+        targetSdk appTargetSdk
+        versionCode appVersionCode
+        versionName appVersionName
 
         dataBinding {
             enabled true
@@ -29,21 +32,32 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
 }
 
 dependencies {
-
+    operationsModules.forEach {
+        implementation project(it)
+    }
+    generalModules.forEach {
+        implementation project(it)
+    }
+    kapt project(':annotationcompiler')
+    implementation 'androidx.core:core-ktx:1.3.2'
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'com.google.android.material:material:1.3.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$kotlinVersion"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$kotlinVersion"
 
     implementation 'io.reactivex.rxjava3:rxandroid:3.0.2'
     implementation 'io.reactivex.rxjava3:rxjava:3.1.5'
-    ext.last_version = '2.9.0'
-    implementation "com.squareup.retrofit2:retrofit:$last_version"
-    implementation "com.squareup.retrofit2:converter-jackson:$last_version"
-    implementation "com.squareup.retrofit2:adapter-rxjava3:$last_version"
+    implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofitVersion"
+    implementation "com.squareup.retrofit2:adapter-rxjava3:$retrofitVersion"
 }

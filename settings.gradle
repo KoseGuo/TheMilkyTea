@@ -1,10 +1,19 @@
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
-        google()
-        mavenCentral()
-        jcenter() // Warning: this repository is going to shut down soon
+        maven {url 'https://maven.aliyun.com/repository/public'}
+        maven {url 'https://maven.aliyun.com/repository/central'}
+        maven {url 'https://maven.aliyun.com/repository/google'}
+        maven {url 'https://maven.aliyun.com/repository/gradle-plugin'}
+        maven {url 'https://maven.aliyun.com/repository/jcenter'}
     }
 }
 rootProject.name = "MilkyTea"
+include ':common'
+include ':network'
+include ':router'
+include ':annotation'
+include ':annotationcompiler'
 include ':app'
+include ':usercenter'
+include ':frontpage'

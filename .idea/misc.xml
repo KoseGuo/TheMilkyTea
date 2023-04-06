@@ -3,13 +3,23 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/AndroidStudioProjects/MilkyTea/app/src/main/res/layout/activity_launcher.xml" value="0.5390625" />
-        <entry key="..\:/AndroidStudioProjects/MilkyTea/app/src/main/res/layout/activity_login.xml" value="0.5536458333333333" />
-        <entry key="..\:/AndroidStudioProjects/MilkyTea/app/src/main/res/layout/activity_main.xml" value="0.5536458333333333" />
+        <entry key="..\:/AndroidStudioProjects/TheMilkyTea/app/src/main/res/layout/activity_launcher.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/TheMilkyTea/app/src/main/res/layout/activity_main.xml" value="0.33125" />
+        <entry key="..\:/AndroidStudioProjects/TheMilkyTea/common/src/main/res/layout/activity_main.xml" value="0.3265625" />
+        <entry key="..\:/AndroidStudioProjects/TheMilkyTea/common/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.34270833333333334" />
+        <entry key="..\:/AndroidStudioProjects/TheMilkyTea/frontpage/src/main/res/drawable/ic_mine.xml" value="0.2611111111111111" />
+        <entry key="..\:/AndroidStudioProjects/TheMilkyTea/frontpage/src/main/res/layout/activity_main.xml" value="0.3265625" />
+        <entry key="..\:/AndroidStudioProjects/TheMilkyTea/frontpage/src/main/res/layout/fragment_home.xml" value="0.3539253539253539" />
+        <entry key="..\:/AndroidStudioProjects/TheMilkyTea/frontpage/src/main/res/layout/fragment_mine.xml" value="0.4046875" />
+        <entry key="..\:/AndroidStudioProjects/TheMilkyTea/frontpage/src/main/res/layout/fragment_msg.xml" value="0.4046875" />
+        <entry key="..\:/AndroidStudioProjects/TheMilkyTea/frontpage/src/main/res/layout/fragment_user.xml" value="0.4046875" />
+        <entry key="..\:/AndroidStudioProjects/TheMilkyTea/frontpage/src/main/res/menu/main_nav_bottom.xml" value="0.33" />
+        <entry key="..\:/AndroidStudioProjects/TheMilkyTea/usercenter/src/main/res/layout/activity_login.xml" value="0.3265625" />
+        <entry key="..\:/AndroidStudioProjects/TheMilkyTea/usercenter/src/main/res/layout/activity_main.xml" value="0.33697916666666666" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

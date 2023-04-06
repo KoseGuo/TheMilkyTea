@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">FrontPage</string>
+    <string name="to_login">goToLogin</string>
+</resources>
